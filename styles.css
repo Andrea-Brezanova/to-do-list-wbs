@@ -8,5 +8,17 @@ div {
   border: 2px solid red;
 }
 
-
-
+.main {
+  height: 100vh;
+  border: 2px solid red;
+  margin: 1rem;
+}
+#top-container {
+  height: 15%;
+}
+#main-container {
+  height: 65%;
+}
+#bottom-container {
+  height: 20%;
+}
