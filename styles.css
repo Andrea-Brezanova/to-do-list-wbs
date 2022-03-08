@@ -22,3 +22,36 @@ div {
 #bottom-container {
   height: 20%;
 }
+
+.row-middle {
+}
+
+.col-checkbox {
+  display: flex;
+  justify-content: center;
+}
+
+.col-empty {
+  display: flex;
+  justify-content:flex-start;
+  
+}
+
+.col-delete {
+  display: flex;
+  justify-content: center;
+}
+
+input[type=checkbox] {
+  transform: scale(2);
+}
+
+.col-checkbox {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper {
+  border: 0.5px solid black;
+  border-radius: 5px;
+}
