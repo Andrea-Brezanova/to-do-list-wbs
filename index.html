@@ -21,9 +21,9 @@
   <body>
     <section class="main">
       <!-- TOP CONTAINER - H1 + BUTTON -->
-      <div id="top-container" class="container mb-3">
+      <div id="top-container" class="container">
         <div class="row">
-          <div class="col-10 d-flex align-items-center pt-5">
+          <div class="col-10 d-flex align-items-center">
             <h2>Today...</h2>
           </div>
           <div class="col-2">
@@ -33,26 +33,31 @@
       </div>
       <!--  MAIN CARDS FOR TODO ITEMS -->
       <div id="main-container" class="container">
-        <div class="row row-middle">   
+        <div class="row row-middle">
           <div class="col-2 col-checkbox">
-              <input type="radio">
-              <span class="checkmark"></span> 
+            <input type="radio" />
+            <span class="checkmark"></span>
           </div>
           <div class="col-8 col-empty"></div>
           <div class="col-2 col-delete">
             <i class="bi bi-x-square"></i>
           </div>
-        </div> 
-      
+        </div>
       </div>
       <!--  INPUT BOX + ADD BUTTON -->
       <div id="bottom-container" class="container">
-        <div class="row h-100">
-          <div class="col-10">
-            <input type="text" name="new_task_input" id="new_task_input" placeholder="Create New Task""/>
-          </div>
-          <div class="col-2">
-            <button id="new_task_input_btn" type="submit">Submit</button>
+        <div class="row">
+          <div class="d-flex flex-row justify-content-between">
+            <input
+              type="text"
+              name="new_task_input"
+              id="new_task_input"
+              placeholder="New Task"
+            />
+
+            <button id="submit-input" type="submit">
+              <i class="bi bi-plus-circle"></i>
+            </button>
           </div>
         </div>
       </div>
