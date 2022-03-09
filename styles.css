@@ -8,19 +8,14 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-.main {
-  height: 100vh;
+
+.bright {
+  color: black;
+  background-color: antiquewhite;
 }
-.main h2 {
-}
-.bi-brightness-high-fill {
-}
-.bi-brightness-high-fill:hover {
-  color: rgba(0, 0, 0, 0.603);
-  cursor: pointer;
-}
-#main-container {
-  height: 65%;
+.dark {
+  color: white;
+  background-color: black;
 }
 
 .col-2 {
@@ -32,30 +27,22 @@ body {
 .row * {
   padding-left: 0;
 }
-#submit-input {
-}
 
-.row-middle {
+.new-todo {
+  width: 100%;
+  background-color: rgba(167, 179, 190, 0.746);
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  align-items: center;
 }
-
-.col-checkbox {
+#string {
+  margin: auto 0;
 }
-
-.col-empty {
+#delete {
+  background-color: transparent;
+  color: red;
 }
-
-.col-delete {
-}
-
-/* input[type="checkbox"] {
-  transform: scale(2);
-} */
-
-.col-checkbox {
-}
-
-.wrapper {
-}
-div {
-  border: 2px solid blueviolet;
+.green1 {
+  background-color: green;
 }
