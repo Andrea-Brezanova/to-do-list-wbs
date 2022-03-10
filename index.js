@@ -32,6 +32,9 @@ submit.addEventListener("click", () => {
   const deleteButton = document.createElement("button");
   deleteButton.id = "delete";
   deleteButton.innerText = "X";
+  deleteButton.addEventListener("click", () => {
+    container.remove();
+  });
 
   main.append(container);
   container.append(checkButton);
