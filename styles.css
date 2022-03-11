@@ -8,30 +8,35 @@
 body {
   font-family: "Poppins", sans-serif;
 }
-
+.bi-brightness-high-fill {
+  font-size: 2rem;
+}
+.bi-brightness-high-fill:hover {
+  color: rgba(49, 45, 45, 0.856);
+}
 .bright {
   color: black;
-  background-color: antiquewhite;
+  background-color: rgba(247, 243, 238, 0.664);
 }
 .dark {
   color: white;
   background-color: black;
 }
-
-.col-2 {
+#main {
+  height: auto;
 }
 
 #new_task_input {
-  min-width: 90%;
+  min-width: 100%;
+  border-radius: 5px;
 }
 .row * {
   padding-left: 0;
 }
-
 .new-todo {
-  width: 100%;
-  background-color: rgba(167, 179, 190, 0.746);
   margin-bottom: 1rem;
+  border: 1px solid black;
+  border-radius: 5px;
   display: grid;
   grid-template-columns: 1fr 4fr 1fr;
   align-items: center;
@@ -42,6 +47,9 @@ body {
 #delete {
   background-color: transparent;
   color: red;
+}
+#add {
+  border-radius: 5px;
 }
 .green1 {
   background-color: green;
