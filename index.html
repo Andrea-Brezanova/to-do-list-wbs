@@ -19,32 +19,35 @@
   </head>
 
   <body>
-    <section id="main" class="container bright">
-      <!-- TOP CONTAINER - H1 + BUTTON -->
-      <div class="container top">
-        <div class="row">
-          <div class="col-10 d-flex align-items-center">
-            <h2>To Do</h2>
-          </div>
-          <div class="col-2 d-flex align-items-center justify-content-center">
-            <i id="dimmer-button" class="bi bi-brightness-high-fill"></i>
-          </div>
-        </div>
-      </div>
-      <!--  MAIN CARDS FOR TODO ITEMS -->
-      <div id="main-container" class="container"></div>
-      <!--  INPUT BOX + ADD BUTTON -->
-      <div id="bottom-container" class="container bottom">
-        <div class="row">
-          <div class="d-flex flex-row justify-content-between mb-3">
-            <input type="text" id="new_task_input" placeholder="New Task" />
-            <button id="add">
-              <i class="bi bi-plus-circle"></i>
-            </button>
+    <div class="outer">
+      <section id="main" class="container-fluid bright">
+        <!-- TOP CONTAINER - H1 + BUTTON -->
+        <div class="container top">
+          <div class="row">
+            <div class="col-10 d-flex align-items-center">
+              <h2>To Do</h2>
+            </div>
+            <div class="col-2 d-flex align-items-center justify-content-center">
+              <i id="dimmer-button" class="bi bi-brightness-high-fill"></i>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+
+        <!--  INPUT BOX + ADD BUTTON -->
+        <div id="bottom-container" class="container bottom">
+          <div class="row">
+            <div
+              class="d-flex flex-row justify-content-between mb-3 input-container"
+            >
+              <input type="text" id="new_task_input" placeholder="New Task" />
+              <button id="add">Add</button>
+            </div>
+          </div>
+        </div>
+        <!--  MAIN CARDS FOR TODO ITEMS -->
+        <div id="main-container" class="container"></div>
+      </section>
+    </div>
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"

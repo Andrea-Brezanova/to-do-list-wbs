@@ -19,25 +19,32 @@ submit.addEventListener("click", () => {
   toDoString.id = "string";
   toDoString.innerText = input.value;
 
-  const checkButton = document.createElement("input");
-  checkButton.type = "checkbox";
+  const checkButton = document.createElement("button");
+  checkButton.id = "check-box";
+  checkButton.innerHTML = "&#10004";
   checkButton.addEventListener("click", () => {
-    if (checkButton.checked) {
-      container.classList = "new-todo green1";
-    } else {
-      container.classList = "new-todo";
-    }
+    console.log("clicked");
+    container.classList.toggle("green1");
+  });
+
+  const progressButton = document.createElement("button");
+  progressButton.id = "progressButton";
+  progressButton.innerHTML = "&#x272A";
+  progressButton.addEventListener("click", () => {
+    console.log("clicked");
+    container.classList.toggle("yellow1");
   });
 
   const deleteButton = document.createElement("button");
   deleteButton.id = "delete";
-  deleteButton.innerText = "X";
+  deleteButton.innerHTML = "DEL";
   deleteButton.addEventListener("click", () => {
     container.remove();
   });
 
   main.append(container);
   container.append(checkButton);
+  container.append(progressButton);
   container.append(toDoString);
   container.append(deleteButton);
 

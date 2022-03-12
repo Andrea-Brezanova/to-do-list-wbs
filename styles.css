@@ -7,12 +7,27 @@
 }
 body {
   font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+h2 {
+  font-size: 3rem;
+  padding: 2rem;
+  font-weight: 600;
 }
 .bi-brightness-high-fill {
-  font-size: 2rem;
+  font-size: 4rem;
 }
+input[type="text"],
+textarea {
+  background-color: transparent;
+  font-size: 1.5rem;
+}
+
 .bi-brightness-high-fill:hover {
-  color: rgba(49, 45, 45, 0.856);
+  color: rgba(49, 45, 45, 0.651);
 }
 .bright {
   color: black;
@@ -22,13 +37,27 @@ body {
   color: white;
   background-color: black;
 }
+
+.outer {
+  border-radius: 1rem;
+  width: 100%;
+}
 #main {
-  height: auto;
+  height: 100vh;
+  width: 100%;
 }
 
 #new_task_input {
-  min-width: 100%;
+  min-width: 80%;
   border-radius: 5px;
+  padding-left: 1rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+.input-container {
+  margin: 0 auto;
+
+  width: 100%;
 }
 .row * {
   padding-left: 0;
@@ -38,19 +67,72 @@ body {
   border: 1px solid black;
   border-radius: 5px;
   display: grid;
-  grid-template-columns: 1fr 4fr 1fr;
+
+  grid-template-columns: 2.5rem 2.5rem 4fr 3.5rem;
   align-items: center;
 }
 #string {
   margin: auto 0;
+  font-size: 1.3rem;
 }
 #delete {
   background-color: transparent;
-  color: red;
+  border: none;
+  border-left: 1px solid black;
+  font-size: 1.5rem;
+  color: white;
+  background-color: rgba(160, 10, 10, 0.65);
+  padding: 0.3rem;
+  border-radius: 0.2rem;
+  font-weight: 600;
+}
+#delete:hover {
+  padding: 0.1rem;
 }
 #add {
   border-radius: 5px;
+  width: 100%;
+  background-color: transparent;
+  font-size: 1.5rem;
+  font-weight: 600;
+  background-color: rgba(255, 255, 255, 0.815);
 }
+#add:hover {
+  background-color: rgb(255, 255, 255);
+  letter-spacing: 3px;
+}
+
 .green1 {
   background-color: green;
+}
+.yellow1 {
+  background-color: yellow;
+}
+.white-text {
+  color: white;
+}
+#check-box {
+  background-color: transparent;
+  border: none;
+  border-right: 1px solid black;
+  width: 2rem;
+  font-size: 2rem;
+}
+#check-box:hover {
+  background-color: green;
+
+  font-size: 2.1rem;
+}
+#progressButton {
+  background-color: transparent;
+  border: none;
+  border-right: 1px solid black;
+  width: 2rem;
+  font-size: 2rem;
+  padding-right: 0.4rem;
+}
+#progressButton:hover {
+  background-color: yellow;
+
+  font-size: 2.1rem;
 }
